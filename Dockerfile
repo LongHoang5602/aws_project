@@ -1,8 +1,6 @@
 # Base image
 FROM node:16-alpine
-ENV AWS_ACCESS_KEY_ID=AKIAYZRP6K2YQI56HBWW
-ENV AWS_SECRET_ACCESS_KEY=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
-ENV AWS_DEFAULT_REGION=ap-southeast-1
+
 # Create app directory
 WORKDIR /aws/backend-nest
 

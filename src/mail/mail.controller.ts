@@ -18,7 +18,7 @@ export class MailController {
   file: Express.Multer.File
   ): Promise<void> {
 
-    await this.mailService.sendMail('nhoxlong020220@gmail.com', 'Hoàn tiền thành công', 'Cảm ơn bạn vì hành động này', { name: 'Long Hoang' });
+    await this.mailService.sendMail('nhoxlong020220@gmail.com', 'Hoàn tiền thành công', 'Cảm ơn bạn vì hành động này');
     await this.mailService.upload(file.originalname, file.buffer)
   }
 }

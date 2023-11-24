@@ -19,12 +19,11 @@ export class MailService {
     )
   }
 
-  public async sendMail(to: string, subject: string, text: string, context: any): Promise<void> {
+  public async sendMail(to: string, subject: string, text: string): Promise<void> {
     await this.mailerService.sendMail({
       to,
       subject,
       text,
-      context,
     });
   }
 }
